@@ -5,3 +5,4 @@
 *.sdf
 *.v12.suo
 /ProceduralMesh.sln
+*.tmp*
