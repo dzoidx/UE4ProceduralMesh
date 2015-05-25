@@ -34,7 +34,6 @@ UObject * UHeightMapFactory::FactoryCreateBinary
 	auto h = *(++intBuff);
 	auto dataBuff = reinterpret_cast<unsigned char*>(++intBuff);
 
-	auto i = 0U;
 	TArray<float> bakedData;
 	while (BufferEnd - dataBuff >= 0)
 	{
