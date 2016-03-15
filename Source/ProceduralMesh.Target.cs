@@ -8,7 +8,7 @@ public class ProceduralMeshTarget : TargetRules
 	public ProceduralMeshTarget(TargetInfo Target)
 	{
 		Type = TargetType.Game;
-	}
+    }
 
 	//
 	// TargetRules interface.

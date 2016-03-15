@@ -3,6 +3,8 @@
 #pragma once
 
 #include "Object.h"
+#include "ProceduralMeshComponent.h"
+#include "ProceduralMeshTriangle.h"
 #include "HeightMap.generated.h"
 
 /**

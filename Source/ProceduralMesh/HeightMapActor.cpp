@@ -41,6 +41,7 @@ void AHeightMapActor::PostEditChangeProperty(FPropertyChangedEvent& PropertyChan
 		PropertyName == GET_MEMBER_NAME_CHECKED(AHeightMapActor, HeightScale) ||
 		PropertyName == GET_MEMBER_NAME_CHECKED(AHeightMapActor, Step))
 	{
+		mesh->ClearAllMeshSections();
 		RebuildMesh();
 	}
 	Super::PostEditChangeProperty(PropertyChangedEvent);
@@ -96,5 +97,5 @@ void AHeightMapActor::RebuildMesh()
 			OutTriangles.Add(t2);
 		}
 	}
-	mesh->SetProceduralMeshTriangles(OutTriangles);
+	CreateMesh(mesh, OutTriangles);
 }

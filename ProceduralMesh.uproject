@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.7",
+	"EngineAssociation": "{6208C72E-4EC0-6926-C562-91A565D5EB4E}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "ProceduralMesh",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+      "LoadingPhase": "Default",
+      "AdditionalDependencies": [
+				"Engine", "ProceduralMeshComponent"
+			]
 		}
 	]
 }

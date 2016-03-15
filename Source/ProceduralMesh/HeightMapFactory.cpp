@@ -41,7 +41,7 @@ UObject * UHeightMapFactory::FactoryCreateBinary
 		++dataBuff;
 	}
 
-	auto result = ConstructObject<UHeightMap>(UHeightMap::StaticClass(), InParent, InName, Flags | RF_Transactional);
+	auto result = NewObject<UHeightMap>(UHeightMap::StaticClass(), InName, Flags | RF_Transactional);
 	result->Data = bakedData;
 	result->Width = w;
 	result->Height = h;

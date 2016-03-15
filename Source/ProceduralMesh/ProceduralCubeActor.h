@@ -4,6 +4,7 @@
 
 #include "GameFramework/Actor.h"
 #include "ProceduralMeshComponent.h"
+#include "ProceduralMeshTriangle.h"
 #include "ProceduralCubeActor.generated.h"
 
 /**

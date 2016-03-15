@@ -14,7 +14,7 @@ ATerrain::ATerrain()
 
 	TArray<FProceduralMeshTriangle> triangles;
 	GenerateTerrain(triangles);
-	mesh->SetProceduralMeshTriangles(triangles);
+	CreateMesh(mesh, triangles);
 }
 
 // Called when the game starts or when spawned
@@ -23,7 +23,7 @@ void ATerrain::BeginPlay()
 	Super::BeginPlay();
 	TArray<FProceduralMeshTriangle> triangles;
 	GenerateTerrain(triangles);
-	mesh->SetProceduralMeshTriangles(triangles);
+	CreateMesh(mesh, triangles);
 }
 
 // Called every frame

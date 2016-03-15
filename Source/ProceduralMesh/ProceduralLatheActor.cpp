@@ -31,7 +31,7 @@ AProceduralLatheActor::AProceduralLatheActor()
 	// Generate a Lathe from rotating the given points
 	TArray<FProceduralMeshTriangle> triangles;
 	GenerateLathe(points, 128, triangles);
-	mesh->SetProceduralMeshTriangles(triangles);
+	CreateMesh(mesh, triangles);
 
 	RootComponent = mesh;
 }

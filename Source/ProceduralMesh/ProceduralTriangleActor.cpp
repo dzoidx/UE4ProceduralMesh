@@ -17,7 +17,7 @@ AProceduralTriangleActor::AProceduralTriangleActor()
 	// Generate a single triangle
 	TArray<FProceduralMeshTriangle> triangles;
 	GenerateTriangle(triangles);
-	mesh->SetProceduralMeshTriangles(triangles);
+	CreateMesh(mesh, triangles);
 
 	RootComponent = mesh;
 }

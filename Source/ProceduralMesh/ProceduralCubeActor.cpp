@@ -17,7 +17,7 @@ AProceduralCubeActor::AProceduralCubeActor()
 	// Generate a cube
 	TArray<FProceduralMeshTriangle> triangles;
 	GenerateCube(100.f, triangles);
-	mesh->SetProceduralMeshTriangles(triangles);
+	CreateMesh(mesh, triangles);
 
 	RootComponent = mesh;
 }
